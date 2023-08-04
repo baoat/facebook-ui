@@ -2,14 +2,38 @@
 
 :root {
   --primary: #1b74e4;
+
+  --font-family: 'FaceBookFont', sans-serif;
 }
 
 html {
   font-size: 62.5%;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 body {
+  font-family: var(--font-family);
   font-size: 1.6rem;
   line-height: 1.5;
   text-rendering: optimizeSpeed;
+}
+
+@font-face {
+  font-family: FaceBookFont;
+  src: url('/acsets/font/6xKtdSZaM9iE8KbpRA_hJFQNcOM.woff2');
+  font-weight: 400;
+}
+@font-face {
+  font-family: FaceBookFont;
+  src: url('/acsets/font/6xKtdSZaM9iE8KbpRA_hJVQNcOM.woff2');
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: FaceBookFont;
+  src: url('/acsets/font/6xKtdSZaM9iE8KbpRA_hK1QN.woff2');
+  font-weight: 700;
 }
