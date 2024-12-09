@@ -1,10 +1,9 @@
 const routes = {
   home: '/',
   watch: '/watch',
-  profile: '/@:nickname',
-  upload: '/upload',
-  live: '/live',
-  discover: '/discover',
+  marketplace: '/marketplace',
+  group: '/group',
+  game: '/game',
 };
 
 export default routes;

@@ -1,5 +1,167 @@
+import classNames from 'classnames/bind';
+import style from './Sidebar.module.scss';
+
+import { AvatarIcon, Iconemty, SeeMoreIcon } from '../../../components/icons/Icons';
+import Button from '../../../components/Button';
+import avatar from '../../../acsets/img/358148583_3464818283834527_2059476123742042306_n.jpg';
+
+const cx = classNames.bind(style);
+
+const MENU_ITEM = [
+  {
+    src: 'https://static.xx.fbcdn.net/rsrc.php/v3/y6/r/MXx87JcFKzH.png',
+    title: 'Friends',
+    classNames: 'friends',
+  },
+  {
+    src: 'https://static.xx.fbcdn.net/rsrc.php/v3/y6/r/MXx87JcFKzH.png',
+    title: 'Group',
+    classNames: 'group',
+  },
+  {
+    src: 'https://static.xx.fbcdn.net/rsrc.php/v3/yT/r/3dN1QwOLden.png',
+    title: 'Feed table',
+    classNames: 'feed-table',
+  },
+  {
+    src: 'https://static.xx.fbcdn.net/rsrc.php/v3/y6/r/MXx87JcFKzH.png',
+    title: 'Marketplace',
+    classNames: 'marketplace',
+  },
+  {
+    src: 'https://static.xx.fbcdn.net/rsrc.php/v3/y6/r/MXx87JcFKzH.png',
+    title: 'Video',
+    classNames: 'video',
+  },
+  {
+    src: 'https://static.xx.fbcdn.net/rsrc.php/v3/y6/r/MXx87JcFKzH.png',
+    title: 'Celebrate',
+    classNames: 'celebrate',
+  },
+  {
+    src: 'https://static.xx.fbcdn.net/rsrc.php/v3/y6/r/MXx87JcFKzH.png',
+    title: 'Saved',
+    classNames: 'saved',
+  },
+];
 function Sidebar() {
-  return <h1>Sidebar</h1>;
+  return (
+    <aside className={cx('wrapper')}>
+      <div className={cx('container')}>
+        <div className={cx('menu')}>
+          <ul>
+            <li>
+              <div>
+                <Button
+                  rectangle
+                  leftIcon={<AvatarIcon classNames={cx('avatar-icon')} src={avatar} />}
+                  className={cx('avatar')}
+                >
+                  <span className={cx('name')}>nguyenchibao</span>
+                </Button>
+              </div>
+            </li>
+          </ul>
+          <div className={cx('list-menu')}>
+            <ul>
+              {MENU_ITEM.map((item) => {
+                let check = item.classNames.includes('feed-table');
+                if (check) {
+                  return (
+                    <li key={item.classNames}>
+                      <div>
+                        <Button
+                          rectangle
+                          leftIcon={<AvatarIcon classNames={cx('feed-table-icon')} src={item.src} />}
+                          className={cx('item')}
+                        >
+                          <span className={cx('name')}>{item.title}</span>
+                        </Button>
+                      </div>
+                    </li>
+                  );
+                } else {
+                  return (
+                    <li key={item.classNames}>
+                      <div className={cx('menu-item')}>
+                        <Button
+                          rectangle
+                          leftIcon={<Iconemty className={cx(item.classNames)} src={item.src} />}
+                          className={cx('item')}
+                        >
+                          <span className={cx('name')}>{item.title}</span>
+                        </Button>
+                      </div>
+                    </li>
+                  );
+                }
+              })}
+              <li>
+                <Button rectangle className={cx('item')}>
+                  <Button circle>
+                    <span className={cx('icon-seemore')}>
+                      <SeeMoreIcon />
+                    </span>
+                  </Button>
+                  <span className={cx('name')}>see more</span>
+                </Button>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div className={cx('shortcut')}>
+          <div className={cx('label')}>
+            <h3 className={cx('title')}>Your Shortcut</h3>
+            <div className={cx('edit')}>
+              {/* <Button rectangle className={cx('btn-edit')}>
+                Edit
+              </Button> */}
+              <a className={cx('btn-edit')}>
+                <h3 className={cx('title')}>Edit</h3>
+              </a>
+            </div>
+          </div>
+          <div className={cx('list-menu')}>
+            <ul>
+              <li>
+                <div>
+                  <Button
+                    rectangle
+                    leftIcon={<AvatarIcon classNames={cx('shortcut-avatar-icon')} src={avatar} />}
+                    className={cx('item')}
+                  >
+                    <span className={cx('name')}>vothuytrang</span>
+                  </Button>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <Button
+                    rectangle
+                    leftIcon={<AvatarIcon classNames={cx('shortcut-avatar-icon')} src={avatar} />}
+                    className={cx('item')}
+                  >
+                    <span className={cx('name')}>vothuytrang</span>
+                  </Button>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <Button
+                    rectangle
+                    leftIcon={<AvatarIcon classNames={cx('shortcut-avatar-icon')} src={avatar} />}
+                    className={cx('item')}
+                  >
+                    <span className={cx('name')}>vothuytrang</span>
+                  </Button>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </aside>
+  );
 }
 
 export default Sidebar;

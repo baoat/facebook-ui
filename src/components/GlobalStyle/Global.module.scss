@@ -2,12 +2,16 @@
 
 :root {
   --primary: #1b74e4;
+  --color-white: #ffffff;
+
+  --height-header: 56px;
 
   --font-family: 'FaceBookFont', sans-serif;
+  --font-size-default: 0.9375rem;
 }
 
 html {
-  font-size: 62.5%;
+  font-size: 100%;
 }
 
 * {
@@ -16,9 +20,30 @@ html {
 
 body {
   font-family: var(--font-family);
-  font-size: 1.6rem;
-  line-height: 1.5;
+  font-size: 12px;
+  line-height: 1.34;
   text-rendering: optimizeSpeed;
+  margin: 0;
+  background-color: #f0f2f5;
+}
+
+button,
+input,
+[tabIndex] {
+  outline: none;
+  border: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.none {
+  display: none;
+}
+
+.block {
+  display: block;
 }
 
 @font-face {
@@ -28,12 +53,12 @@ body {
 }
 @font-face {
   font-family: FaceBookFont;
-  src: url('/acsets/font/6xKtdSZaM9iE8KbpRA_hJVQNcOM.woff2');
+  src: url('/acsets/font/6xKtdSZaM9iE8KbpRA_hK1QN.woff2');
   font-weight: 600;
 }
 
 @font-face {
   font-family: FaceBookFont;
-  src: url('/acsets/font/6xKtdSZaM9iE8KbpRA_hK1QN.woff2');
+  src: url('/acsets/font/6xKtdSZaM9iE8KbpRA_hJVQNcOM.woff2');
   font-weight: 700;
 }

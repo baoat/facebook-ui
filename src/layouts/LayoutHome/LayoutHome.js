@@ -13,6 +13,9 @@ function LayoutHome({ children }) {
       <div className={cx('container')}>
         <Sidebar />
         {children}
+        <div style={{ flex: 1 }}>
+          <h1>Sidebar 2</h1>
+        </div>
       </div>
     </div>
   );
