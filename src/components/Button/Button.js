@@ -12,6 +12,8 @@ const Button = React.forwardRef(function (
     href,
     primary = false,
     circle = false,
+    notBackground = false,
+    btnSmall = false,
     rectangle = false,
     a = false,
     className,
@@ -30,6 +32,8 @@ const Button = React.forwardRef(function (
     primary,
     circle,
     rectangle,
+    notBackground,
+    btnSmall,
     a,
   });
 

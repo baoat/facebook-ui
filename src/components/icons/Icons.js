@@ -188,3 +188,31 @@ export const AddStoryIcon = ({ classNames }) => (
     </g>
   </svg>
 );
+
+export const ThreeDotIcon = ({ classNames }) => (
+  <svg
+    viewBox="0 0 20 20"
+    width="20"
+    height="20"
+    fill="currentColor"
+    className={classNames}
+    // style="--color:var(--secondary-icon)"
+  >
+    <g fill-rule="evenodd" transform="translate(-446 -350)">
+      <path d="M458 360a2 2 0 1 1-4 0 2 2 0 0 1 4 0m6 0a2 2 0 1 1-4 0 2 2 0 0 1 4 0m-12 0a2 2 0 1 1-4 0 2 2 0 0 1 4 0"></path>
+    </g>
+  </svg>
+);
+
+export const X = ({ classNames }) => (
+  <svg
+    viewBox="0 0 20 20"
+    width="20"
+    height="20"
+    fill="currentColor"
+    className={classNames}
+    // style="--color:var(--secondary-icon)"
+  >
+    <path d="M15.543 3.043a1 1 0 1 1 1.414 1.414L11.414 10l5.543 5.542a1 1 0 0 1-1.414 1.415L10 11.414l-5.543 5.543a1 1 0 0 1-1.414-1.415L8.586 10 3.043 4.457a1 1 0 1 1 1.414-1.414L10 8.586l5.543-5.543z"></path>
+  </svg>
+);
