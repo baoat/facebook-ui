@@ -3,6 +3,7 @@ import style from './Home.module.scss';
 import { AddStoryIcon, AvatarIcon, ThreeDotIcon, X } from '../../components/icons';
 import avatar from '../../acsets/img/358148583_3464818283834527_2059476123742042306_n.jpg';
 import avatar1 from '../../acsets/img/Unnamed-17.jpg';
+import avatar2 from '../../acsets/img/329384181_2152850734905959_3134467547685974562_n.jpg';
 import Button from '../../components/Button';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faVideo, faImages, faFaceLaugh } from '@fortawesome/free-solid-svg-icons';
@@ -149,6 +150,7 @@ function Home() {
                 <div className={cx('content-title__wrapping')}>
                   <div className={cx('content-title__avatar')}>
                     <img className={cx('avatar')} alt="" src={avatar} />
+                    {/* <div className={cx('dot-online')}></div> */}
                   </div>
                   <div className={cx('content-title__name')}>
                     <span className={cx('name-friend')}>Nguyen Chi Bao </span>
@@ -166,8 +168,20 @@ function Home() {
                   </div>
                 </div>
               </div>
-              <div className={cx('content-cap')}>Cap</div>
-              <div className={cx('content-img-or-video')}>Image or video</div>
+              <div className={cx('content-cap')}>
+                <div className={cx('wrapper-cap')}>
+                  <div className={cx('cap-item')}>No Cap</div>
+                  <div className={cx('cap-item')}>No Cap</div>
+                  <div className={cx('cap-item')}>No Cap</div>
+                  <div className={cx('cap-item')}>No Cap</div>
+                  <div className={cx('cap-item')}>No Cap</div>
+                </div>
+              </div>
+              <div className={cx('content-img-or-video')}>
+                <div className={cx('wrapper-img-or-video')}>
+                  <img src={avatar1} alt="" />
+                </div>
+              </div>
             </div>
           </div>
         </div>

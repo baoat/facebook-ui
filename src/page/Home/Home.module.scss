@@ -1,6 +1,6 @@
 .page-home {
   flex: 2;
-  text-align: center;
+  // text-align: center;
   padding: 0 32px;
 }
 
@@ -120,6 +120,7 @@
           background-color: white;
           height: 49px;
           width: 100%;
+          text-align: center;
           border-bottom-right-radius: 8px;
           border-bottom-left-radius: 8px;
           padding: 23px 0 10px 0;
@@ -140,8 +141,8 @@
       img {
         width: 100%;
         height: 100%;
-        object-fit: cover; /* Giúp ảnh bao phủ toàn bộ thẻ cha mà không bị méo */
-        position: absolute; /* Giúp ảnh nằm chính xác bên trong thẻ cha */
+        object-fit: cover;
+        position: absolute;
         top: 0;
         left: 0;
         border-radius: 8px;
@@ -196,18 +197,34 @@
 
   .content-title {
     padding: 12px 16px 0 16px;
+    margin-bottom: 8px;
 
     .content-title__wrapping {
       display: flex;
       align-items: center;
       .content-title__avatar {
+        position: relative;
+        width: 40px;
+        height: 40px;
         margin-right: 8px;
         cursor: pointer;
         .avatar {
-          width: 40px;
-          height: 40px;
+          width: 100%;
           border-radius: 50%;
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
         }
+
+        // .dot-online {
+        //   background-color: greenyellow;
+        //   width: 5px;
+        //   height: 5px;
+        //   border-radius: 50%;
+        //   position: absolute;
+        // }
       }
 
       .content-title__name {
@@ -217,8 +234,9 @@
 
         .name-friend {
           font-size: 15px;
-          font-weight: 600;
+          font-weight: 700;
           font-family: var(--font-family);
+          margin-bottom: 4px;
           cursor: pointer;
           &:hover {
             text-decoration: underline;
@@ -228,6 +246,7 @@
         .time {
           color: #65686c;
           font-size: 13px;
+          font-weight: 600;
           cursor: pointer;
           &:hover {
             text-decoration: underline;
@@ -248,8 +267,34 @@
   }
 
   .content-cap {
+    padding: 4px 16px 16px 16px;
+
+    .wrapper-cap {
+      line-height: 1.3;
+      margin: -5px 0;
+      .cap-item {
+        font-size: 15px;
+        text-align: start;
+      }
+    }
   }
 
   .content-img-or-video {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    .wrapper-img-or-video {
+      min-width: 500px;
+      max-width: 100%;
+      max-height: 750px;
+      width: calc(-216.667px + 66.6667vh);
+      img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+      }
+    }
   }
 }
