@@ -1,0 +1,47 @@
+.profile {
+  position: absolute;
+  border-radius: 16px;
+  display: none;
+  width: 300px;
+  background-color: white;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: showProfile 0.2s linear;
+  padding-top: 16px;
+  border: 1px ridge #f0f2f5;
+
+  .profile-user {
+    padding: 0 28px;
+    display: flex;
+    .avatar {
+      img {
+        width: 92px;
+        height: 92px;
+        border-radius: 50%;
+      }
+    }
+
+    .information {
+      padding: 0 16px;
+      .information-name {
+        padding: 4px 0 0 0;
+        margin-bottom: 8px;
+        span {
+          font-size: 1.25rem;
+          font-weight: 700;
+          color: #080808;
+          text-align: start;
+        }
+      }
+    }
+  }
+}
+
+@keyframes showProfile {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
