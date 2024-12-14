@@ -81,9 +81,39 @@
   display: block;
   margin-top: 16px;
   padding: 0 0 16px 0;
+  position: relative;
+
+  .btn-scroll-left {
+    display: none;
+    position: absolute;
+    z-index: 999;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 16px;
+  }
+
+  .btn-scroll-right {
+    position: absolute;
+    z-index: 999;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 16px;
+  }
+
+  .btn-scroll-left,
+  .btn-scroll-right {
+    Button {
+      height: 48px;
+      width: 48px;
+      background-color: #fff;
+    }
+  }
   .story-list-item {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: calc(100% / 5);
+    overflow-x: auto;
+    scrollbar-width: none;
     .story-item {
       position: relative;
       height: 200px;
@@ -396,6 +426,9 @@
         flex-grow: 1;
         font-size: 15px;
         color: #65686c;
+        span {
+          margin-left: 4px;
+        }
       }
     }
 

@@ -178,6 +178,122 @@ export const SeeMoreIcon = ({ classNames }) => (
   </svg>
 );
 
+export const LiveStreamIcon = ({ src, className }) => (
+  <i
+    style={{
+      backgroundImage: `url(${src})`,
+      width: '24px',
+      height: '24px',
+      // display: 'inline-block',
+      // backgroundSize: '38px 570px',
+      // backgroundRepeat: 'no-repeat',
+      objectFit: 'fill',
+    }}
+    className={className}
+  ></i>
+);
+
+export const ImageAddVideoIcon = ({ src, className }) => (
+  <i
+    style={{
+      backgroundImage: `url(${src})`,
+      width: '24px',
+      height: '24px',
+      objectFit: 'fill',
+    }}
+    className={className}
+  ></i>
+);
+
+export const FeelAddActionIcon = ({ src, className }) => (
+  <i
+    style={{
+      backgroundImage: `url(${src})`,
+      width: '24px',
+      height: '24px',
+      objectFit: 'fill',
+    }}
+    className={className}
+  ></i>
+);
+
+export const ScrollRightIcon = ({ classNames }) => (
+  <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor" className={classNames}>
+    <path d="M9.209 5.207 16 12l-6.791 6.793a1 1 0 1 0 1.415 1.414l7.5-7.5a1 1 0 0 0 0-1.414l-7.5-7.5a1 1 0 1 0-1.415 1.414z"></path>
+  </svg>
+);
+
+export const ScrollLeftIcon = ({ classNames }) => (
+  <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor" className={classNames}>
+    <path d="M14.791 5.207 8 12l6.793 6.793a1 1 0 1 1-1.415 1.414l-7.5-7.5a1 1 0 0 1 0-1.414l7.5-7.5a1 1 0 1 1 1.415 1.414z"></path>
+  </svg>
+);
+
+export const LikeIcon = ({ src, className }) => (
+  <i
+    style={{
+      backgroundImage: `url(${src})`,
+      width: '20px',
+      height: '20px',
+      display: 'inline-block',
+      backgroundSize: 'auto',
+      backgroundRepeat: 'no-repeat',
+      backgroundPosition: '0px -798px',
+      objectFit: 'fill',
+      filter: 'contrast(0.5)',
+    }}
+    className={className}
+  ></i>
+);
+export const CommentIcon = ({ src, className }) => (
+  <i
+    style={{
+      backgroundImage: `url(${src})`,
+      width: '20px',
+      height: '20px',
+      display: 'inline-block',
+      backgroundSize: 'auto',
+      backgroundRepeat: 'no-repeat',
+      backgroundPosition: '0px -588px',
+      objectFit: 'fill',
+      filter: 'contrast(0.5)',
+    }}
+    className={className}
+  ></i>
+);
+export const SendIcon = ({ src, className }) => (
+  <i
+    style={{
+      backgroundImage: `url(${src})`,
+      width: '20px',
+      height: '20px',
+      display: 'inline-block',
+      backgroundSize: 'auto',
+      backgroundRepeat: 'no-repeat',
+      backgroundPosition: '0px -205px',
+      objectFit: 'fill',
+      filter: 'contrast(0.5)',
+    }}
+    className={className}
+  ></i>
+);
+export const ShareIcon = ({ src, className }) => (
+  <i
+    style={{
+      backgroundImage: `url(${src})`,
+      width: '20px',
+      height: '20px',
+      display: 'inline-block',
+      backgroundSize: 'auto',
+      backgroundRepeat: 'no-repeat',
+      backgroundPosition: '0px -924px',
+      objectFit: 'fill',
+      filter: 'contrast(0.5)',
+    }}
+    className={className}
+  ></i>
+);
+
 export const AddStoryIcon = ({ classNames }) => (
   <svg viewBox="0 0 20 20" width="20" height="20" fill="currentColor" className={classNames}>
     <g fill-rule="evenodd" transform="translate(-446 -350)">

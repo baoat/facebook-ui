@@ -9,12 +9,12 @@ const cx = classNames.bind(style);
 
 const MENU_ITEM = [
   {
-    src: 'https://static.xx.fbcdn.net/rsrc.php/v3/y6/r/MXx87JcFKzH.png',
+    src: 'https://static.xx.fbcdn.net/rsrc.php/v4/yw/r/-GSeaf19sqF.png?_nc_eui2=AeHdFmIcr0n-yBd2zNYKSRzXCR5jHNvbVS0JHmMc29tVLROCteKlNf2sMWuLh4PJghto0uhJWM7mKFSRl0EcK9U-',
     title: 'Friends',
     classNames: 'friends',
   },
   {
-    src: 'https://static.xx.fbcdn.net/rsrc.php/v3/y6/r/MXx87JcFKzH.png',
+    src: 'https://static.xx.fbcdn.net/rsrc.php/v4/yw/r/-GSeaf19sqF.png?_nc_eui2=AeHdFmIcr0n-yBd2zNYKSRzXCR5jHNvbVS0JHmMc29tVLROCteKlNf2sMWuLh4PJghto0uhJWM7mKFSRl0EcK9U-',
     title: 'Group',
     classNames: 'group',
   },
@@ -24,22 +24,22 @@ const MENU_ITEM = [
     classNames: 'feed-table',
   },
   {
-    src: 'https://static.xx.fbcdn.net/rsrc.php/v3/y6/r/MXx87JcFKzH.png',
+    src: 'https://static.xx.fbcdn.net/rsrc.php/v4/yw/r/-GSeaf19sqF.png?_nc_eui2=AeHdFmIcr0n-yBd2zNYKSRzXCR5jHNvbVS0JHmMc29tVLROCteKlNf2sMWuLh4PJghto0uhJWM7mKFSRl0EcK9U-',
     title: 'Marketplace',
     classNames: 'marketplace',
   },
   {
-    src: 'https://static.xx.fbcdn.net/rsrc.php/v3/y6/r/MXx87JcFKzH.png',
+    src: 'https://static.xx.fbcdn.net/rsrc.php/v4/yw/r/-GSeaf19sqF.png?_nc_eui2=AeHdFmIcr0n-yBd2zNYKSRzXCR5jHNvbVS0JHmMc29tVLROCteKlNf2sMWuLh4PJghto0uhJWM7mKFSRl0EcK9U-',
     title: 'Video',
     classNames: 'video',
   },
   {
-    src: 'https://static.xx.fbcdn.net/rsrc.php/v3/y6/r/MXx87JcFKzH.png',
+    src: 'https://static.xx.fbcdn.net/rsrc.php/v4/yw/r/-GSeaf19sqF.png?_nc_eui2=AeHdFmIcr0n-yBd2zNYKSRzXCR5jHNvbVS0JHmMc29tVLROCteKlNf2sMWuLh4PJghto0uhJWM7mKFSRl0EcK9U-',
     title: 'Celebrate',
     classNames: 'celebrate',
   },
   {
-    src: 'https://static.xx.fbcdn.net/rsrc.php/v3/y6/r/MXx87JcFKzH.png',
+    src: 'https://static.xx.fbcdn.net/rsrc.php/v4/yw/r/-GSeaf19sqF.png?_nc_eui2=AeHdFmIcr0n-yBd2zNYKSRzXCR5jHNvbVS0JHmMc29tVLROCteKlNf2sMWuLh4PJghto0uhJWM7mKFSRl0EcK9U-',
     title: 'Saved',
     classNames: 'saved',
   },
