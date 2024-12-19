@@ -1,15 +1,12 @@
 import classNames from 'classnames/bind';
 import style from './Home.module.scss';
 import {
-  AddStoryIcon,
   AvatarIcon,
   CommentIcon,
   FeelAddActionIcon,
   ImageAddVideoIcon,
   LikeIcon,
   LiveStreamIcon,
-  ScrollLeftIcon,
-  ScrollRightIcon,
   SeeMoreIcon,
   SendIcon,
   ShareIcon,
@@ -34,10 +31,43 @@ import {
   faStickyNote,
 } from '@fortawesome/free-solid-svg-icons';
 import Profile from '../../components/Profile';
+import Stories from './components/Stories';
 
 const cx = classNames.bind(style);
 
 function Home() {
+  const items = [
+    { image: avatar },
+    { image: avatar },
+    { image: avatar },
+    { image: avatar },
+    { image: avatar },
+    { image: avatar },
+    { image: avatar },
+    { image: avatar },
+    { image: avatar },
+    { image: avatar },
+    { image: avatar },
+    { image: avatar },
+    { image: avatar },
+    { image: avatar },
+    { image: avatar },
+    { image: avatar },
+    { image: avatar },
+    { image: avatar },
+    { image: avatar },
+    { image: avatar },
+    { image: avatar },
+    { image: avatar },
+    { image: avatar },
+    { image: avatar },
+    { image: avatar },
+    { image: avatar },
+    { image: avatar },
+    { image: avatar },
+    { image: avatar },
+    { image: avatar },
+  ];
   return (
     <div className={cx('page-home')}>
       <div className={cx('page-home__wrapping')}>
@@ -91,180 +121,7 @@ function Home() {
               </Button>
             </div>
           </div>
-          <div className={cx('story')}>
-            <div className={cx('btn-scroll-left')}>
-              <Button circle>
-                <ScrollLeftIcon />
-              </Button>
-            </div>
-            <div className={cx('story-list-item')}>
-              <div className={cx('story-item', 'story-item__user')}>
-                <div className={cx('story-item__user-wrapping')}>
-                  <div
-                    style={{
-                      backgroundImage: `url(${avatar1})`,
-                      backgroundSize: 'cover',
-                      backgroundPosition: 'center',
-                      backgroundRepeat: 'no-repeat',
-                    }}
-                    className={cx('story-item__avatar')}
-                  >
-                    <Button className={cx('add-story')} circle>
-                      <AddStoryIcon classNames={cx('add-story-icon')} />
-                    </Button>
-                  </div>
-                  <div className={cx('story-item__white')}>
-                    <span className={cx('story-item__white-text')}>Create story</span>
-                  </div>
-                </div>
-              </div>
-              <div className={cx('story-item', 'story-item__friend')}>
-                <img alt="" src={avatar} />
-                <div className={cx('story-item__friend-wrapping')}>
-                  <div className={cx('story-item__img')}>
-                    <Button className={cx('story-icon__avatar')} circle>
-                      <img src={avatar} alt="nguyenchibao" className={cx('avatar')} />
-                    </Button>
-                  </div>
-                  <div className={cx('story-item__name')}>
-                    <div className={cx('space')}></div>
-                    <span className={cx('name')}>Create story</span>
-                  </div>
-                </div>
-              </div>
-              <div className={cx('story-item', 'story-item__friend')}>
-                <img alt="" src={avatar} />
-                <div className={cx('story-item__friend-wrapping')}>
-                  <div className={cx('story-item__img')}>
-                    <Button className={cx('story-icon__avatar')} circle>
-                      <img src={avatar} alt="nguyenchibao" className={cx('avatar')} />
-                    </Button>
-                  </div>
-                  <div className={cx('story-item__name')}>
-                    <div className={cx('space')}></div>
-                    <span className={cx('name')}>Create story</span>
-                  </div>
-                </div>
-              </div>
-              <div className={cx('story-item', 'story-item__friend')}>
-                <img alt="" src={avatar} />
-                <div className={cx('story-item__friend-wrapping')}>
-                  <div className={cx('story-item__img')}>
-                    <Button className={cx('story-icon__avatar')} circle>
-                      <img src={avatar} alt="nguyenchibao" className={cx('avatar')} />
-                    </Button>
-                  </div>
-                  <div className={cx('story-item__name')}>
-                    <div className={cx('space')}></div>
-                    <span className={cx('name')}>Create story</span>
-                  </div>
-                </div>
-              </div>
-              <div className={cx('story-item', 'story-item__friend')}>
-                <img alt="" src={avatar} />
-                <div className={cx('story-item__friend-wrapping')}>
-                  <div className={cx('story-item__img')}>
-                    <Button className={cx('story-icon__avatar')} circle>
-                      <img src={avatar} alt="nguyenchibao" className={cx('avatar')} />
-                    </Button>
-                  </div>
-                  <div className={cx('story-item__name')}>
-                    <div className={cx('space')}></div>
-                    <span className={cx('name')}>Create story</span>
-                  </div>
-                </div>
-              </div>
-              <div className={cx('story-item', 'story-item__friend')}>
-                <img alt="" src={avatar} />
-                <div className={cx('story-item__friend-wrapping')}>
-                  <div className={cx('story-item__img')}>
-                    <Button className={cx('story-icon__avatar')} circle>
-                      <img src={avatar} alt="nguyenchibao" className={cx('avatar')} />
-                    </Button>
-                  </div>
-                  <div className={cx('story-item__name')}>
-                    <div className={cx('space')}></div>
-                    <span className={cx('name')}>Create story</span>
-                  </div>
-                </div>
-              </div>
-              <div className={cx('story-item', 'story-item__friend')}>
-                <img alt="" src={avatar} />
-                <div className={cx('story-item__friend-wrapping')}>
-                  <div className={cx('story-item__img')}>
-                    <Button className={cx('story-icon__avatar')} circle>
-                      <img src={avatar} alt="nguyenchibao" className={cx('avatar')} />
-                    </Button>
-                  </div>
-                  <div className={cx('story-item__name')}>
-                    <div className={cx('space')}></div>
-                    <span className={cx('name')}>Create story</span>
-                  </div>
-                </div>
-              </div>
-              <div className={cx('story-item', 'story-item__friend')}>
-                <img alt="" src={avatar} />
-                <div className={cx('story-item__friend-wrapping')}>
-                  <div className={cx('story-item__img')}>
-                    <Button className={cx('story-icon__avatar')} circle>
-                      <img src={avatar} alt="nguyenchibao" className={cx('avatar')} />
-                    </Button>
-                  </div>
-                  <div className={cx('story-item__name')}>
-                    <div className={cx('space')}></div>
-                    <span className={cx('name')}>Create story</span>
-                  </div>
-                </div>
-              </div>
-              <div className={cx('story-item', 'story-item__friend')}>
-                <img alt="" src={avatar} />
-                <div className={cx('story-item__friend-wrapping')}>
-                  <div className={cx('story-item__img')}>
-                    <Button className={cx('story-icon__avatar')} circle>
-                      <img src={avatar} alt="nguyenchibao" className={cx('avatar')} />
-                    </Button>
-                  </div>
-                  <div className={cx('story-item__name')}>
-                    <div className={cx('space')}></div>
-                    <span className={cx('name')}>Create story</span>
-                  </div>
-                </div>
-              </div>
-              <div className={cx('story-item', 'story-item__friend')}>
-                <img alt="" src={avatar} />
-                <div className={cx('story-item__friend-wrapping')}>
-                  <div className={cx('story-item__img')}>
-                    <Button className={cx('story-icon__avatar')} circle>
-                      <img src={avatar} alt="nguyenchibao" className={cx('avatar')} />
-                    </Button>
-                  </div>
-                  <div className={cx('story-item__name')}>
-                    <div className={cx('space')}></div>
-                    <span className={cx('name')}>Create story</span>
-                  </div>
-                </div>
-              </div>
-              <div className={cx('story-item', 'story-item__friend')}>
-                <img alt="" src={avatar} />
-                <div className={cx('story-item__friend-wrapping')}>
-                  <div className={cx('story-item__img')}>
-                    <Button className={cx('story-icon__avatar')} circle>
-                      <img src={avatar} alt="nguyenchibao" className={cx('avatar')} />
-                    </Button>
-                  </div>
-                  <div className={cx('story-item__name')}>
-                    <div className={cx('space')}></div>
-                    <span className={cx('name')}>Create story</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className={cx('btn-scroll-right')}>
-              <Button circle>
-                <ScrollRightIcon />
-              </Button>
-            </div>
-          </div>
+          <Stories items={items} itemsToShow={5} />
           <div className={cx('post')}>
             <div className={cx('post-title')}>
               <div className={cx('post-title__wrapping')}>
