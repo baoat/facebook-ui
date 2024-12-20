@@ -3,6 +3,7 @@ import Button from '../Button';
 import style from './Profile.module.scss';
 import classNames from 'classnames/bind';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { ThreeDotIcon } from '../icons';
 
 const cx = classNames.bind(style);
 
@@ -30,6 +31,9 @@ function Profile({ className, src }) {
       <div className={cx('action')}>
         <Button primary>Message</Button>
         <Button>unFollow</Button>
+        <Button>
+          <ThreeDotIcon />
+        </Button>
       </div>
     </div>
   );

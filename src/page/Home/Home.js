@@ -23,25 +23,14 @@ import avatar1 from '../../acsets/img/Unnamed-17.jpg';
 import avatar2 from '../../acsets/img/329384181_2152850734905959_3134467547685974562_n.jpg';
 import Button from '../../components/Button';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {
-  faHeart,
-  faThumbsUp,
-  faComment,
-  faPaperPlane,
-  faShare,
-  faUserTie,
-  faFaceSmile,
-  faCamera,
-  faGift,
-  faStickyNote,
-} from '@fortawesome/free-solid-svg-icons';
+import { faHeart, faThumbsUp } from '@fortawesome/free-solid-svg-icons';
 import Profile from '../../components/Profile';
 import Stories from './components/Stories';
 
 const cx = classNames.bind(style);
 
 function Home() {
-  const items = [
+  const itemsStories = [
     { image: avatar },
     { image: avatar },
     { image: avatar },
@@ -126,7 +115,7 @@ function Home() {
               </Button>
             </div>
           </div>
-          <Stories items={items} itemsToShow={5} />
+          <Stories items={itemsStories} itemsToShow={5} />
           <div className={cx('post')}>
             <div className={cx('post-title')}>
               <div className={cx('post-title__wrapping')}>

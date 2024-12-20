@@ -3,7 +3,7 @@
   width: 360px;
   min-width: 280px;
   min-height: inherit;
-  height: 100vh;
+  max-height: 100ch;
   overflow: hidden;
 
   ul {
@@ -16,11 +16,35 @@
   }
 }
 
-.container {
+.sidebar {
+  position: fixed;
   margin: 0 6px;
-  display: grid;
-  overflow-y: auto;
+  width: 360px;
+  height: calc(100% - 50px);
+  left: 0;
+  overflow-y: hidden;
+  &:hover {
+    overflow-y: auto;
+  }
 }
+
+.sidebar::-webkit-scrollbar {
+  width: 10px; /* Đặt chiều rộng của thanh cuộn */
+  &:hover {
+    background-color: #d0d3d7;
+  }
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+  border-radius: 18px;
+  background-color: #bcc0c4;
+}
+
+.sidebar::-webkit-scrollbar-track {
+  background-color: transparent;
+  border-radius: 18px;
+}
+
 .menu {
   margin-top: 16px;
   border-bottom: 1px solid #ced0d4;

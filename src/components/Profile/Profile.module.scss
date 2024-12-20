@@ -2,12 +2,13 @@
   position: absolute;
   border-radius: 16px;
   display: none;
-  width: 300px;
+  // width: 300px;
   background-color: white;
   left: 50%;
   transform: translateX(-50%);
   animation: showProfile 0.2s linear;
   padding-top: 16px;
+  padding-bottom: 16px;
   border: 1px ridge #f0f2f5;
 
   .profile-user {
@@ -34,6 +35,12 @@
         }
       }
     }
+  }
+
+  .action {
+    padding: 0 16px;
+    display: flex;
+    justify-content: space-between;
   }
 }
 

@@ -47,7 +47,7 @@ const MENU_ITEM = [
 function Sidebar() {
   return (
     <aside className={cx('wrapper')}>
-      <div className={cx('container')}>
+      <div className={cx('sidebar')}>
         <div className={cx('menu')}>
           <ul>
             <li>

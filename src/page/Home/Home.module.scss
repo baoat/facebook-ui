@@ -452,9 +452,11 @@
             justify-content: space-between;
             .wrapper-input {
               padding: 8px 12px;
+              flex-grow: 1;
 
               input {
                 background-color: transparent;
+                width: 100%;
               }
             }
 
