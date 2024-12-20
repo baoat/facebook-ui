@@ -332,3 +332,84 @@ export const X = ({ classNames }) => (
     <path d="M15.543 3.043a1 1 0 1 1 1.414 1.414L11.414 10l5.543 5.542a1 1 0 0 1-1.414 1.415L10 11.414l-5.543 5.543a1 1 0 0 1-1.414-1.415L8.586 10 3.043 4.457a1 1 0 1 1 1.414-1.414L10 8.586l5.543-5.543z"></path>
   </svg>
 );
+
+export const HairIcon = ({ src, className }) => (
+  <i
+    style={{
+      backgroundImage: `url(${src})`,
+      width: '16px',
+      height: '16px',
+      display: 'inline-block',
+      backgroundSize: 'auto',
+      backgroundRepeat: 'no-repeat',
+      backgroundPosition: '0px -201px',
+      objectFit: 'fill',
+      filter: 'contrast(0.5)',
+    }}
+    className={className}
+  ></i>
+);
+export const FaceSmileIcon = ({ src, className }) => (
+  <i
+    style={{
+      backgroundImage: `url(${src})`,
+      width: '16px',
+      height: '16px',
+      display: 'inline-block',
+      backgroundSize: 'auto',
+      backgroundRepeat: 'no-repeat',
+      backgroundPosition: '0px -286px',
+      objectFit: 'fill',
+      filter: 'contrast(0.5)',
+    }}
+    className={className}
+  ></i>
+);
+export const CameraIcon = ({ src, className }) => (
+  <i
+    style={{
+      backgroundImage: `url(${src})`,
+      width: '16px',
+      height: '16px',
+      display: 'inline-block',
+      backgroundSize: 'auto',
+      backgroundRepeat: 'no-repeat',
+      backgroundPosition: '0px -252px',
+      objectFit: 'fill',
+      filter: 'contrast(0.5)',
+    }}
+    className={className}
+  ></i>
+);
+export const GiftIcon = ({ src, className }) => (
+  <i
+    style={{
+      backgroundImage: `url(${src})`,
+      width: '16px',
+      height: '16px',
+      display: 'inline-block',
+      backgroundSize: 'auto',
+      backgroundRepeat: 'no-repeat',
+      backgroundPosition: '0px -303px',
+      objectFit: 'fill',
+      filter: 'contrast(0.5)',
+    }}
+    className={className}
+  ></i>
+);
+export const TickerIcon = ({ src, className }) => (
+  <i
+    style={{
+      backgroundImage: `url(${src})`,
+      width: '16px',
+      height: '16px',
+      display: 'inline-block',
+      backgroundSize: 'auto',
+      backgroundRepeat: 'no-repeat',
+      backgroundPosition: '0px -388px',
+      objectFit: 'fill',
+      filter: 'contrast(0.5)',
+    }}
+    className={className}
+  ></i>
+);

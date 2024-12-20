@@ -156,6 +156,39 @@ function Sidebar() {
                   </Button>
                 </div>
               </li>
+              <li>
+                <div>
+                  <Button
+                    rectangle
+                    leftIcon={<AvatarIcon classNames={cx('shortcut-avatar-icon')} src={avatar} />}
+                    className={cx('item')}
+                  >
+                    <span className={cx('name')}>vothuytrang</span>
+                  </Button>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <Button
+                    rectangle
+                    leftIcon={<AvatarIcon classNames={cx('shortcut-avatar-icon')} src={avatar} />}
+                    className={cx('item')}
+                  >
+                    <span className={cx('name')}>vothuytrang</span>
+                  </Button>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <Button
+                    rectangle
+                    leftIcon={<AvatarIcon classNames={cx('shortcut-avatar-icon')} src={avatar} />}
+                    className={cx('item')}
+                  >
+                    <span className={cx('name')}>vothuytrang</span>
+                  </Button>
+                </div>
+              </li>
             </ul>
           </div>
         </div>

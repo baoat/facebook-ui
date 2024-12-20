@@ -2,8 +2,12 @@ import classNames from 'classnames/bind';
 import style from './Home.module.scss';
 import {
   AvatarIcon,
+  CameraIcon,
   CommentIcon,
+  FaceSmileIcon,
   FeelAddActionIcon,
+  GiftIcon,
+  HairIcon,
   ImageAddVideoIcon,
   LikeIcon,
   LiveStreamIcon,
@@ -11,6 +15,7 @@ import {
   SendIcon,
   ShareIcon,
   ThreeDotIcon,
+  TickerIcon,
   X,
 } from '../../components/icons';
 import avatar from '../../acsets/img/358148583_3464818283834527_2059476123742042306_n.jpg';
@@ -298,27 +303,48 @@ function Home() {
                           <ul>
                             <li>
                               <Button notBackground circle>
-                                <FontAwesomeIcon style={{ height: '16px', width: '16px' }} icon={faUserTie} />
+                                {/* <FontAwesomeIcon style={{ height: '16px', width: '16px' }} icon={faUserTie} /> */}
+                                <HairIcon
+                                  src={
+                                    'https://static.xx.fbcdn.net/rsrc.php/v4/ym/r/EK68MH0oqi2.png?_nc_eui2=AeF7uGjaK6v28Ewd3IFlVNEQW_ikVT0bTs5b-KRVPRtOzh_lj9O9pWfPvko21BgxKyoGs6f8VgJsjjYYvKZVi-9A'
+                                  }
+                                />
                               </Button>
                             </li>
                             <li>
                               <Button notBackground circle>
-                                <FontAwesomeIcon style={{ height: '16px', width: '16px' }} icon={faFaceSmile} />
+                                <FaceSmileIcon
+                                  src={
+                                    'https://static.xx.fbcdn.net/rsrc.php/v4/ym/r/EK68MH0oqi2.png?_nc_eui2=AeF7uGjaK6v28Ewd3IFlVNEQW_ikVT0bTs5b-KRVPRtOzh_lj9O9pWfPvko21BgxKyoGs6f8VgJsjjYYvKZVi-9A'
+                                  }
+                                />
                               </Button>
                             </li>
                             <li>
                               <Button notBackground circle>
-                                <FontAwesomeIcon style={{ height: '16px', width: '16px' }} icon={faCamera} />
+                                <CameraIcon
+                                  src={
+                                    'https://static.xx.fbcdn.net/rsrc.php/v4/ym/r/EK68MH0oqi2.png?_nc_eui2=AeF7uGjaK6v28Ewd3IFlVNEQW_ikVT0bTs5b-KRVPRtOzh_lj9O9pWfPvko21BgxKyoGs6f8VgJsjjYYvKZVi-9A'
+                                  }
+                                />
                               </Button>
                             </li>
                             <li>
                               <Button notBackground circle>
-                                <FontAwesomeIcon style={{ height: '16px', width: '16px' }} icon={faGift} />
+                                <GiftIcon
+                                  src={
+                                    'https://static.xx.fbcdn.net/rsrc.php/v4/ym/r/EK68MH0oqi2.png?_nc_eui2=AeF7uGjaK6v28Ewd3IFlVNEQW_ikVT0bTs5b-KRVPRtOzh_lj9O9pWfPvko21BgxKyoGs6f8VgJsjjYYvKZVi-9A'
+                                  }
+                                />
                               </Button>
                             </li>
                             <li>
                               <Button notBackground circle>
-                                <FontAwesomeIcon style={{ height: '16px', width: '16px' }} icon={faStickyNote} />
+                                <TickerIcon
+                                  src={
+                                    'https://static.xx.fbcdn.net/rsrc.php/v4/ym/r/EK68MH0oqi2.png?_nc_eui2=AeF7uGjaK6v28Ewd3IFlVNEQW_ikVT0bTs5b-KRVPRtOzh_lj9O9pWfPvko21BgxKyoGs6f8VgJsjjYYvKZVi-9A'
+                                  }
+                                />
                               </Button>
                             </li>
                           </ul>
@@ -335,11 +361,14 @@ function Home() {
               <div className={cx('post-title__wrapping')}>
                 <div className={cx('post-title__avatar')}>
                   <img className={cx('avatar')} alt="" src={avatar} />
-                  {/* <div className={cx('dot-online')}></div> */}
+                  <Profile src={avatar} className={cx('profile')} />
                 </div>
                 <div className={cx('post-title__name')}>
                   <div>
-                    <span className={cx('name-friend')}>Nguyen Chi Bao </span>
+                    <span className={cx('name-friend')}>
+                      Nguyen Chi Bao
+                      <Profile src={avatar} className={cx('profile')} />
+                    </span>
                   </div>
                   <div>
                     <span className={cx('time')}>21 hour</span>
@@ -391,25 +420,57 @@ function Home() {
                   </div>
                 </div>
                 <div className={cx('activity-action')}>
-                  <Button className={cx('action-like')} notBackground leftIcon={<FontAwesomeIcon icon={faThumbsUp} />}>
-                    Like
+                  <Button
+                    className={cx('action-like')}
+                    notBackground
+                    leftIcon={
+                      <LikeIcon
+                        src={
+                          'https://static.xx.fbcdn.net/rsrc.php/v4/y4/r/xAljGE-8t8Y.png?_nc_eui2=AeGyFTA73MvDzioVy71LvwjLYHlezEfsCP5geV7MR-wI_oSRnPGzIzlAeGAk_Gcm1rBDvpXhbLk0NJouC0Y0vDqv'
+                        }
+                      />
+                    }
+                  >
+                    <span>Like</span>
                   </Button>
                   <Button
                     className={cx('action-comment')}
                     notBackground
-                    leftIcon={<FontAwesomeIcon icon={faComment} />}
+                    leftIcon={
+                      <CommentIcon
+                        src={
+                          'https://static.xx.fbcdn.net/rsrc.php/v4/y4/r/xAljGE-8t8Y.png?_nc_eui2=AeGyFTA73MvDzioVy71LvwjLYHlezEfsCP5geV7MR-wI_oSRnPGzIzlAeGAk_Gcm1rBDvpXhbLk0NJouC0Y0vDqv'
+                        }
+                      />
+                    }
                   >
-                    Comment
+                    <span>Comment</span>
                   </Button>
                   <Button
                     className={cx('action-send')}
                     notBackground
-                    leftIcon={<FontAwesomeIcon icon={faPaperPlane} />}
+                    leftIcon={
+                      <SendIcon
+                        src={
+                          'https://static.xx.fbcdn.net/rsrc.php/v4/yO/r/EMmLOa3Dvgo.png?_nc_eui2=AeG4fFuJbj3pNA8fqJKC0CODAEeyXVx8gOAAR7JdXHyA4Ha6SrxQOFf4EtDKPNDouVOx4vbEFMDCc24mBNmpZMn0'
+                        }
+                      />
+                    }
                   >
-                    Send
+                    <span>Send</span>
                   </Button>
-                  <Button className={cx('action-share')} notBackground leftIcon={<FontAwesomeIcon icon={faShare} />}>
-                    Share
+                  <Button
+                    className={cx('action-share')}
+                    notBackground
+                    leftIcon={
+                      <ShareIcon
+                        src={
+                          'https://static.xx.fbcdn.net/rsrc.php/v4/y4/r/xAljGE-8t8Y.png?_nc_eui2=AeGyFTA73MvDzioVy71LvwjLYHlezEfsCP5geV7MR-wI_oSRnPGzIzlAeGAk_Gcm1rBDvpXhbLk0NJouC0Y0vDqv'
+                        }
+                      />
+                    }
+                  >
+                    <span>Share</span>
                   </Button>
                 </div>
                 <div style={{ width: '100%', borderTop: '1px solid #65686c', marginBottom: '4px' }}></div>
@@ -471,27 +532,48 @@ function Home() {
                           <ul>
                             <li>
                               <Button notBackground circle>
-                                <FontAwesomeIcon style={{ height: '16px', width: '16px' }} icon={faUserTie} />
+                                {/* <FontAwesomeIcon style={{ height: '16px', width: '16px' }} icon={faUserTie} /> */}
+                                <HairIcon
+                                  src={
+                                    'https://static.xx.fbcdn.net/rsrc.php/v4/ym/r/EK68MH0oqi2.png?_nc_eui2=AeF7uGjaK6v28Ewd3IFlVNEQW_ikVT0bTs5b-KRVPRtOzh_lj9O9pWfPvko21BgxKyoGs6f8VgJsjjYYvKZVi-9A'
+                                  }
+                                />
                               </Button>
                             </li>
                             <li>
                               <Button notBackground circle>
-                                <FontAwesomeIcon style={{ height: '16px', width: '16px' }} icon={faFaceSmile} />
+                                <FaceSmileIcon
+                                  src={
+                                    'https://static.xx.fbcdn.net/rsrc.php/v4/ym/r/EK68MH0oqi2.png?_nc_eui2=AeF7uGjaK6v28Ewd3IFlVNEQW_ikVT0bTs5b-KRVPRtOzh_lj9O9pWfPvko21BgxKyoGs6f8VgJsjjYYvKZVi-9A'
+                                  }
+                                />
                               </Button>
                             </li>
                             <li>
                               <Button notBackground circle>
-                                <FontAwesomeIcon style={{ height: '16px', width: '16px' }} icon={faCamera} />
+                                <CameraIcon
+                                  src={
+                                    'https://static.xx.fbcdn.net/rsrc.php/v4/ym/r/EK68MH0oqi2.png?_nc_eui2=AeF7uGjaK6v28Ewd3IFlVNEQW_ikVT0bTs5b-KRVPRtOzh_lj9O9pWfPvko21BgxKyoGs6f8VgJsjjYYvKZVi-9A'
+                                  }
+                                />
                               </Button>
                             </li>
                             <li>
                               <Button notBackground circle>
-                                <FontAwesomeIcon style={{ height: '16px', width: '16px' }} icon={faGift} />
+                                <GiftIcon
+                                  src={
+                                    'https://static.xx.fbcdn.net/rsrc.php/v4/ym/r/EK68MH0oqi2.png?_nc_eui2=AeF7uGjaK6v28Ewd3IFlVNEQW_ikVT0bTs5b-KRVPRtOzh_lj9O9pWfPvko21BgxKyoGs6f8VgJsjjYYvKZVi-9A'
+                                  }
+                                />
                               </Button>
                             </li>
                             <li>
                               <Button notBackground circle>
-                                <FontAwesomeIcon style={{ height: '16px', width: '16px' }} icon={faStickyNote} />
+                                <TickerIcon
+                                  src={
+                                    'https://static.xx.fbcdn.net/rsrc.php/v4/ym/r/EK68MH0oqi2.png?_nc_eui2=AeF7uGjaK6v28Ewd3IFlVNEQW_ikVT0bTs5b-KRVPRtOzh_lj9O9pWfPvko21BgxKyoGs6f8VgJsjjYYvKZVi-9A'
+                                  }
+                                />
                               </Button>
                             </li>
                           </ul>

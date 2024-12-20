@@ -3,7 +3,8 @@
   width: 360px;
   min-width: 280px;
   min-height: inherit;
-  overflow-y: hidden;
+  height: 100vh;
+  overflow: hidden;
 
   ul {
     margin: 0;
@@ -17,6 +18,8 @@
 
 .container {
   margin: 0 6px;
+  display: grid;
+  overflow-y: auto;
 }
 .menu {
   margin-top: 16px;
