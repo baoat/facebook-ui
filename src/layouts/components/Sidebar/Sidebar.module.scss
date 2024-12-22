@@ -64,6 +64,7 @@
 
   .avatar-icon {
     border-radius: 50%;
+    object-fit: cover;
   }
 
   .name {
@@ -142,9 +143,11 @@
 
 .shortcut-avatar-icon {
   border-radius: 6px;
+  object-fit: cover;
 }
 
-.icon-seemore {
+.icon-seemore,
+.icon-hidden {
   display: flex;
   align-items: center;
   justify-content: center;

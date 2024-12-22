@@ -19,11 +19,11 @@ function Profile({ className, src }) {
             <span>Nguyễn Chí Bảo</span>
           </div>
           <div className={cx('information-item')}>
-            <FontAwesomeIcon icon={faUserPlus} />
+            <FontAwesomeIcon className={cx('information-item__icon')} icon={faUserPlus} />
             <span>Has become friends with nguyenchibao</span>
           </div>
           <div className={cx('information-item')}>
-            <FontAwesomeIcon icon={faEarth} />
+            <FontAwesomeIcon className={cx('information-item__icon')} icon={faEarth} />
             <span>Has become friends with nguyenchibao</span>
           </div>
         </div>

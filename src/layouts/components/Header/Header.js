@@ -58,10 +58,6 @@ function Header() {
     setValueSearch(e.target.value);
   };
 
-  useEffect(() => {
-    console.log(valueSearch);
-  });
-
   return (
     <header className={cx('wrapper')}>
       <div className={cx('container')}>

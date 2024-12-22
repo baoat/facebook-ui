@@ -1,9 +1,10 @@
 import classNames from 'classnames/bind';
 import style from './Sidebar.module.scss';
 
-import { AvatarIcon, Iconemty, SeeMoreIcon } from '../../../components/icons/Icons';
+import { AvatarIcon, HiddenIcon, Iconemty, SeeMoreIcon } from '../../../components/icons/Icons';
 import Button from '../../../components/Button';
-import avatar from '../../../acsets/img/358148583_3464818283834527_2059476123742042306_n.jpg';
+import avatar from '../../../acsets/img/Unnamed-17.jpg';
+import { useState } from 'react';
 
 const cx = classNames.bind(style);
 
@@ -43,28 +44,95 @@ const MENU_ITEM = [
     title: 'Saved',
     classNames: 'saved',
   },
+  {
+    src: 'https://static.xx.fbcdn.net/rsrc.php/v4/yw/r/-GSeaf19sqF.png?_nc_eui2=AeHdFmIcr0n-yBd2zNYKSRzXCR5jHNvbVS0JHmMc29tVLROCteKlNf2sMWuLh4PJghto0uhJWM7mKFSRl0EcK9U-',
+    title: 'Friends',
+    classNames: 'friends',
+  },
+  {
+    src: 'https://static.xx.fbcdn.net/rsrc.php/v4/yw/r/-GSeaf19sqF.png?_nc_eui2=AeHdFmIcr0n-yBd2zNYKSRzXCR5jHNvbVS0JHmMc29tVLROCteKlNf2sMWuLh4PJghto0uhJWM7mKFSRl0EcK9U-',
+    title: 'Group',
+    classNames: 'group',
+  },
+  {
+    src: 'https://static.xx.fbcdn.net/rsrc.php/v3/yT/r/3dN1QwOLden.png',
+    title: 'Feed table',
+    classNames: 'feed-table',
+  },
+  {
+    src: 'https://static.xx.fbcdn.net/rsrc.php/v4/yw/r/-GSeaf19sqF.png?_nc_eui2=AeHdFmIcr0n-yBd2zNYKSRzXCR5jHNvbVS0JHmMc29tVLROCteKlNf2sMWuLh4PJghto0uhJWM7mKFSRl0EcK9U-',
+    title: 'Marketplace',
+    classNames: 'marketplace',
+  },
+  {
+    src: 'https://static.xx.fbcdn.net/rsrc.php/v4/yw/r/-GSeaf19sqF.png?_nc_eui2=AeHdFmIcr0n-yBd2zNYKSRzXCR5jHNvbVS0JHmMc29tVLROCteKlNf2sMWuLh4PJghto0uhJWM7mKFSRl0EcK9U-',
+    title: 'Video',
+    classNames: 'video',
+  },
+  {
+    src: 'https://static.xx.fbcdn.net/rsrc.php/v4/yw/r/-GSeaf19sqF.png?_nc_eui2=AeHdFmIcr0n-yBd2zNYKSRzXCR5jHNvbVS0JHmMc29tVLROCteKlNf2sMWuLh4PJghto0uhJWM7mKFSRl0EcK9U-',
+    title: 'Celebrate',
+    classNames: 'celebrate',
+  },
+  {
+    src: 'https://static.xx.fbcdn.net/rsrc.php/v4/yw/r/-GSeaf19sqF.png?_nc_eui2=AeHdFmIcr0n-yBd2zNYKSRzXCR5jHNvbVS0JHmMc29tVLROCteKlNf2sMWuLh4PJghto0uhJWM7mKFSRl0EcK9U-',
+    title: 'Saved',
+    classNames: 'saved',
+  },
+  {
+    src: 'https://static.xx.fbcdn.net/rsrc.php/v4/yw/r/-GSeaf19sqF.png?_nc_eui2=AeHdFmIcr0n-yBd2zNYKSRzXCR5jHNvbVS0JHmMc29tVLROCteKlNf2sMWuLh4PJghto0uhJWM7mKFSRl0EcK9U-',
+    title: 'Friends',
+    classNames: 'friends',
+  },
+  {
+    src: 'https://static.xx.fbcdn.net/rsrc.php/v4/yw/r/-GSeaf19sqF.png?_nc_eui2=AeHdFmIcr0n-yBd2zNYKSRzXCR5jHNvbVS0JHmMc29tVLROCteKlNf2sMWuLh4PJghto0uhJWM7mKFSRl0EcK9U-',
+    title: 'Group',
+    classNames: 'group',
+  },
+  {
+    src: 'https://static.xx.fbcdn.net/rsrc.php/v3/yT/r/3dN1QwOLden.png',
+    title: 'Feed table',
+    classNames: 'feed-table',
+  },
+  {
+    src: 'https://static.xx.fbcdn.net/rsrc.php/v4/yw/r/-GSeaf19sqF.png?_nc_eui2=AeHdFmIcr0n-yBd2zNYKSRzXCR5jHNvbVS0JHmMc29tVLROCteKlNf2sMWuLh4PJghto0uhJWM7mKFSRl0EcK9U-',
+    title: 'Marketplace',
+    classNames: 'marketplace',
+  },
+  {
+    src: 'https://static.xx.fbcdn.net/rsrc.php/v4/yw/r/-GSeaf19sqF.png?_nc_eui2=AeHdFmIcr0n-yBd2zNYKSRzXCR5jHNvbVS0JHmMc29tVLROCteKlNf2sMWuLh4PJghto0uhJWM7mKFSRl0EcK9U-',
+    title: 'Video',
+    classNames: 'video',
+  },
+  {
+    src: 'https://static.xx.fbcdn.net/rsrc.php/v4/yw/r/-GSeaf19sqF.png?_nc_eui2=AeHdFmIcr0n-yBd2zNYKSRzXCR5jHNvbVS0JHmMc29tVLROCteKlNf2sMWuLh4PJghto0uhJWM7mKFSRl0EcK9U-',
+    title: 'Celebrate',
+    classNames: 'celebrate',
+  },
 ];
 function Sidebar() {
+  const [loadMore, setLoadMore] = useState(false);
+
+  const handleLoadMore = () => {
+    setLoadMore(!loadMore);
+  };
+
   return (
     <aside className={cx('wrapper')}>
       <div className={cx('sidebar')}>
         <div className={cx('menu')}>
-          <ul>
-            <li>
-              <div>
-                <Button
-                  rectangle
-                  leftIcon={<AvatarIcon classNames={cx('avatar-icon')} src={avatar} />}
-                  className={cx('avatar')}
-                >
-                  <span className={cx('name')}>nguyenchibao</span>
-                </Button>
-              </div>
-            </li>
-          </ul>
+          <div>
+            <Button
+              rectangle
+              leftIcon={<AvatarIcon classNames={cx('avatar-icon')} src={avatar} />}
+              className={cx('avatar')}
+            >
+              <span className={cx('name')}>nguyenchibao</span>
+            </Button>
+          </div>
           <div className={cx('list-menu')}>
             <ul>
-              {MENU_ITEM.map((item) => {
+              {MENU_ITEM.slice(0, loadMore ? MENU_ITEM.length : 5).map((item) => {
                 let check = item.classNames.includes('feed-table');
                 if (check) {
                   return (
@@ -97,13 +165,11 @@ function Sidebar() {
                 }
               })}
               <li>
-                <Button rectangle className={cx('item')}>
+                <Button onClick={handleLoadMore} rectangle className={cx('item')}>
                   <Button circle>
-                    <span className={cx('icon-seemore')}>
-                      <SeeMoreIcon />
-                    </span>
+                    <span className={cx('icon-seemore')}>{loadMore ? <HiddenIcon /> : <SeeMoreIcon />}</span>
                   </Button>
-                  <span className={cx('name')}>see more</span>
+                  <span className={cx('name')}>{loadMore ? 'hidden' : 'see more'}</span>
                 </Button>
               </li>
             </ul>

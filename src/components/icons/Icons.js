@@ -178,6 +178,12 @@ export const SeeMoreIcon = ({ classNames }) => (
   </svg>
 );
 
+export const HiddenIcon = ({ classNames }) => (
+  <svg viewBox="0 0 20 20" width="20" height="20" fill="currentColor" aria-hidden="true" className={classNames}>
+    <path d="M15.47 12.2 10 6.727 4.53 12.2a.75.75 0 0 1-1.06-1.061l6-6a.751.751 0 0 1 1.06 0l6 6a.75.75 0 0 1-1.06 1.061z"></path>
+  </svg>
+);
+
 export const LiveStreamIcon = ({ src, className }) => (
   <i
     style={{
@@ -227,6 +233,22 @@ export const ScrollLeftIcon = ({ classNames }) => (
   <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor" className={classNames}>
     <path d="M14.791 5.207 8 12l6.793 6.793a1 1 0 1 1-1.415 1.414l-7.5-7.5a1 1 0 0 1 0-1.414l7.5-7.5a1 1 0 1 1 1.415 1.414z"></path>
   </svg>
+);
+
+export const SendCommentIcon = ({ className }) => (
+  <i
+    style={{
+      backgroundImage: `url(https://static.xx.fbcdn.net/rsrc.php/v4/yc/r/HZcyIfHHvmP.png)`,
+      width: '16px',
+      height: '16px',
+      display: 'inline-block',
+      backgroundSize: 'auto',
+      backgroundPosition: '0 -337px',
+      backgroundRepeat: 'no-repeat',
+      filter: 'invert(80%) sepia(6%) saturate(200%) saturate(120%) hue-rotate(173deg) brightness(98%) contrast(89%)',
+    }}
+    className={className}
+  ></i>
 );
 
 export const LikeIcon = ({ src, className }) => (

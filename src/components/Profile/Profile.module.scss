@@ -2,14 +2,15 @@
   position: absolute;
   border-radius: 16px;
   display: none;
-  // width: 300px;
   background-color: white;
   left: 50%;
   transform: translateX(-50%);
-  animation: showProfile 0.2s linear;
   padding-top: 16px;
   padding-bottom: 16px;
   border: 1px ridge #f0f2f5;
+  opacity: 0;
+  transition: opacity 0.2s linear 0.5s;
+  z-index: 9999;
 
   .profile-user {
     padding: 0 28px;
@@ -34,6 +35,24 @@
           text-align: start;
         }
       }
+
+      .information-item {
+        display: flex;
+        font-size: 0.9375rem;
+        line-height: 1.333;
+        font-weight: 400;
+        color: #080809;
+        text-align: start;
+
+        .information-item__icon {
+          filter: invert(59%) sepia(11%) saturate(200%) saturate(135%) hue-rotate(176deg) brightness(96%) contrast(94%);
+          margin-right: 5px;
+        }
+      }
+
+      .information-item:nth-child(n) {
+        margin-top: 4px;
+      }
     }
   }
 
@@ -41,14 +60,5 @@
     padding: 0 16px;
     display: flex;
     justify-content: space-between;
-  }
-}
-
-@keyframes showProfile {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
   }
 }
