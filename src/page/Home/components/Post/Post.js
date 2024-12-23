@@ -23,6 +23,7 @@ import avatar2 from '../../../../acsets/img/358148583_3464818283834527_205947612
 import Profile from '../../../../components/Profile';
 import Button from '../../../../components/Button';
 import { useState } from 'react';
+import Emotions from './components';
 
 const cx = classNames.bind(style);
 
@@ -170,15 +171,7 @@ function Post() {
             >
               <span>Share</span>
             </Button>
-            <div className={cx('choose-emotion')}>
-              <div style={{ backgroundColor: 'blue', width: '39px', height: '39px', borderRadius: '50%' }}></div>
-              <div style={{ backgroundColor: 'blue', width: '39px', height: '39px', borderRadius: '50%' }}></div>
-              <div style={{ backgroundColor: 'blue', width: '39px', height: '39px', borderRadius: '50%' }}></div>
-              <div style={{ backgroundColor: 'blue', width: '39px', height: '39px', borderRadius: '50%' }}></div>
-              <div style={{ backgroundColor: 'blue', width: '39px', height: '39px', borderRadius: '50%' }}></div>
-              <div style={{ backgroundColor: 'blue', width: '39px', height: '39px', borderRadius: '50%' }}></div>
-              <div style={{ backgroundColor: 'blue', width: '39px', height: '39px', borderRadius: '50%' }}></div>
-            </div>
+            <Emotions className={cx('choose-emotion')} />
           </div>
           <div style={{ width: '100%', borderTop: '1px solid #65686c', marginBottom: '4px' }}></div>
           <div className={cx('activity-comment')}>
@@ -203,9 +196,10 @@ function Post() {
                     </div>
                     <div className={cx('comment-action')}>
                       <span className={cx('action-item')}>5 hour</span>
-                      <span className={cx('action-item')}>Like</span>
+                      <span className={cx('action-item__like', 'action-item')}>Like</span>
                       <span className={cx('action-item')}>Feedback</span>
                       <span className={cx('action-item')}>Share</span>
+                      <Emotions className={cx('choose-emotion')} />
                       <Button circle className={cx('icon-btn', 'icon-btn__heart')}>
                         <FontAwesomeIcon style={{ width: '10px', height: '10px', color: 'white' }} icon={faHeart} />
                       </Button>

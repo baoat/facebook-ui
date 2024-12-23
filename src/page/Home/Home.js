@@ -6,7 +6,6 @@ import avatar1 from '../../acsets/img/Unnamed-17.jpg';
 import Button from '../../components/Button';
 import Stories from './components/Stories';
 import Post from './components/Post';
-import { useEffect, useRef } from 'react';
 
 const cx = classNames.bind(style);
 

@@ -226,17 +226,8 @@
       border-top: 1px solid #65686c;
 
       .choose-emotion {
-        position: absolute;
-        visibility: hidden;
-        display: flex;
-        border-radius: 18px;
-        background-color: white;
-        border: 1px ridge #f0f2f5;
-        padding: 2px;
         left: 5px;
-        top: -64%;
-        transition: visibility 0s linear 1s;
-        z-index: 9999;
+        top: -89%;
       }
 
       .action-like:hover ~ .choose-emotion,
@@ -332,6 +323,20 @@
               .comment-action {
                 display: flex;
                 align-items: center;
+                margin-top: 10px;
+
+                .choose-emotion {
+                  left: 77px;
+                  top: 25%;
+                }
+
+                .action-item__like:hover ~ .choose-emotion,
+                .choose-emotion:hover {
+                  visibility: visible;
+                  animation: showEmotion linear 0.2s;
+                  animation-delay: 1s;
+                }
+
                 .action-item {
                   margin: 0 8px;
 

@@ -1,0 +1,30 @@
+.choose-emotion {
+  position: absolute;
+  visibility: hidden;
+  display: flex;
+  border-radius: 25px;
+  background-color: white;
+  border: 1px ridge #f0f2f5;
+  padding: 2px;
+  transition: visibility 0s linear 1s;
+  z-index: 9999;
+
+  .emotion {
+    // position: absolute;
+    // bottom: 0;
+    width: 39px;
+    height: 39px;
+    background-color: blue;
+    border-radius: 50%;
+  }
+
+  .emotion:nth-child(n) {
+    margin-left: 8px;
+  }
+
+  div:hover {
+    height: 43px;
+    width: 43px;
+    background-color: yellow;
+  }
+}
