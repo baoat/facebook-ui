@@ -18,8 +18,8 @@ import {
 } from '../../../../components/icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHeart, faThumbsUp } from '@fortawesome/free-solid-svg-icons';
-import avatar from '../../../../acsets/img/358148583_3464818283834527_2059476123742042306_n.jpg';
-import avatar2 from '../../../../acsets/img/358148583_3464818283834527_2059476123742042306_n.jpg';
+import avatar from '../../../../acsets/img/images.jpg';
+import avatar2 from '../../../../acsets/img/images.jpg';
 import Profile from '../../../../components/Profile';
 import Button from '../../../../components/Button';
 import { useState } from 'react';

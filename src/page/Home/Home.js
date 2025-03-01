@@ -1,7 +1,7 @@
 import classNames from 'classnames/bind';
 import style from './Home.module.scss';
 import { AvatarIcon, FeelAddActionIcon, ImageAddVideoIcon, LiveStreamIcon, X } from '../../components/icons';
-import avatar from '../../acsets/img/358148583_3464818283834527_2059476123742042306_n.jpg';
+import avatar from '../../acsets/img/images.jpg';
 import avatar1 from '../../acsets/img/Unnamed-17.jpg';
 import Button from '../../components/Button';
 import Stories from './components/Stories';

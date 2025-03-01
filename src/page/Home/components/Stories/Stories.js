@@ -3,7 +3,7 @@ import style from './Stories.module.scss';
 
 import { ScrollLeftIcon, ScrollRightIcon, AddStoryIcon } from '../../../../components/icons';
 
-import avatar from '../../../../acsets/img/358148583_3464818283834527_2059476123742042306_n.jpg';
+import avatar from '../../../../acsets/img/images.jpg';
 import avatar1 from '../../../../acsets/img/Unnamed-17.jpg';
 import Button from '../../../../components/Button';
 import { useEffect, useRef, useState } from 'react';

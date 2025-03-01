@@ -46,6 +46,10 @@ ul {
   display: block;
 }
 
+img {
+  object-fit: cover;
+}
+
 @font-face {
   font-family: FaceBookFont;
   src: url('/acsets/font/6xKtdSZaM9iE8KbpRA_hJFQNcOM.woff2');
