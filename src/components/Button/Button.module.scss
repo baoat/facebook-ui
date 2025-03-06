@@ -46,6 +46,9 @@
 .primary {
   color: var(--color-white);
   background-color: var(--primary);
+
+  &:hover {
+  }
 }
 
 .circle {

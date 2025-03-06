@@ -60,5 +60,16 @@
     padding: 0 16px;
     display: flex;
     justify-content: space-between;
+
+    .btn-three-dot {
+      min-width: 10px;
+    }
+
+    .item:not(:last-child) {
+      flex: 2;
+    }
+    .item:last-child {
+      flex: 1;
+    }
   }
 }
