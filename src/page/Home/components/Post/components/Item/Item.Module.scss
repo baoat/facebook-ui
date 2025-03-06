@@ -28,15 +28,6 @@
           bottom: 0;
         }
 
-        .profile {
-          top: 40px;
-        }
-
-        &:hover .profile {
-          display: block;
-          opacity: 1;
-        }
-
         // .dot-online {
         //   background-color: greenyellow;
         //   width: 5px;
@@ -58,16 +49,8 @@
           margin-bottom: 4px;
           cursor: pointer;
           position: relative;
-
-          .profile {
-            top: 20px;
-          }
           &:hover {
             text-decoration: underline;
-            .profile {
-              display: block;
-              opacity: 1;
-            }
           }
         }
 

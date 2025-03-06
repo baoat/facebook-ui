@@ -51,15 +51,15 @@ function Item({ user }) {
       <div className={cx('post-title')}>
         <div className={cx('post-title__wrapping')}>
           <div className={cx('post-title__avatar')}>
-            <img className={cx('avatar')} alt="" src={user.avatar} />
-            <Profile user={user} className={cx('profile')} />
+            <Profile user={user} className={cx('profile')}>
+              <img className={cx('avatar')} alt="" src={user.avatar} />
+            </Profile>
           </div>
           <div className={cx('post-title__name')}>
             <div>
-              <span className={cx('name-friend')}>
-                {user.name}
-                <Profile src={user} className={cx('profile')} />
-              </span>
+              <Profile user={user} className={cx('profile')}>
+                <span className={cx('name-friend')}>{user.name}</span>
+              </Profile>
             </div>
             <div>
               <span className={cx('time')}>21 hour</span>

@@ -1,16 +1,14 @@
 .profile {
   position: absolute;
   border-radius: 16px;
-  display: none;
+  display: flex;
+  flex-direction: column;
   background-color: white;
-  left: 50%;
   transform: translateX(-50%);
   padding-top: 16px;
   padding-bottom: 16px;
-  border: 1px ridge #f0f2f5;
-  opacity: 0;
-  transition: opacity 0.2s linear 0.5s;
-  z-index: 9999;
+  border: 1px ridge #0000000d;
+  // transition: opacity 0.2s linear 0.5s;
 
   .profile-user {
     padding: 0 28px;
